@@ -1,0 +1,313 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "resource.h"
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// ì˙ñ{åÍ resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+#ifdef _WIN32
+LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
+#pragma code_page(932)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""resource.h""\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG3 DIALOGEX 400, 400, 154, 104
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION
+CAPTION "AF Frame"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_AFFRAME_VIEW,"Static",SS_ETCHEDFRAME | SS_CENTERIMAGE | SS_REALSIZEIMAGE,2,2,150,92
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_DIALOG3, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 92
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // ì˙ñ{åÍ resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// âpåÍ (ïƒçë) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About RAWDevelop"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "RAWDevelop Version 1.0",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2006",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,16,WS_GROUP
+END
+
+IDD_RAWDEVELOP_DIALOG DIALOGEX 0, 0, 465, 382
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "RAWDevelop"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    LTEXT           "Input File:",IDC_STATIC,8,9,35,8
+    EDITTEXT        IDC_EDIT1,45,7,165,13,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_IMAGEFRAME,"Static",SS_BLACKFRAME,8,24,218,134
+    GROUPBOX        "Image Source",IDC_STATIC,8,162,215,78
+    CONTROL         "Thumbnail",IDC_RADIO_THM,"Button",BS_AUTORADIOBUTTON,21,177,54,9
+    CONTROL         "FullView",IDC_RADIO_FULL,"Button",BS_AUTORADIOBUTTON,21,188,48,9
+    LTEXT           "x:",IDC_STATIC,29,204,9,8
+    LTEXT           "y:",IDC_STATIC,107,204,9,8
+    LTEXT           "w:",IDC_STATIC,29,222,9,8
+    LTEXT           "h:",IDC_STATIC,107,222,9,8
+    EDITTEXT        IDC_EDIT_X,39,201,47,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_Y,115,201,47,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_W,39,219,47,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_H,115,219,47,13,ES_AUTOHSCROLL
+    LTEXT           "Infomation",IDC_STATIC,8,243,42,8
+    CONTROL         "",IDC_LIST1,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | LVS_NOCOLUMNHEADER | WS_BORDER | WS_TABSTOP,8,252,213,109
+    PUSHBUTTON      "...",IDC_OPENFILE,215,7,15,13
+    CONTROL         "",IDC_CTRLPANEL_FRAME,"Static",SS_BLACKFRAME,232,7,225,356
+    CONTROL         "",IDC_PROGRESS1,"msctls_progress32",WS_BORDER,259,364,199,10
+    CONTROL         "AF Frame",IDC_AFFRAME,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,365,47,10
+END
+
+IDD_DIALOG1 DIALOGEX 0, 0, 185, 368
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_CHILD | WS_CAPTION | WS_SYSMENU
+CAPTION "Process"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    LTEXT           "DigitalExposure",IDC_STATIC,7,7,50,8
+    CONTROL         "",IDC_SLIDER_EXPORSUR,"msctls_trackbar32",TBS_AUTOTICKS | TBS_TOP | WS_TABSTOP,15,25,114,15
+    EDITTEXT        IDC_EDIT1,135,31,26,14,ES_AUTOHSCROLL | ES_READONLY
+    GROUPBOX        "",IDC_STATIC,7,14,140,5
+    PUSHBUTTON      "AtCap",IDC_BUTTON1,148,10,30,14
+    LTEXT           "WhiteBarance",IDC_STATIC,7,54,46,8
+    GROUPBOX        "",IDC_STATIC,7,61,140,5
+    PUSHBUTTON      "AtCap",IDC_BUTTON2,148,57,30,14
+    LTEXT           "PictureStyle",IDC_STATIC,7,154,39,8
+    GROUPBOX        "",IDC_STATIC,7,161,140,5
+    PUSHBUTTON      "AtCap",IDC_BUTTON3,148,157,30,14
+    LTEXT           "ColorSpace",IDC_STATIC,7,287,37,8
+    GROUPBOX        "",IDC_STATIC,7,295,140,5
+    PUSHBUTTON      "AtCap",IDC_BUTTON4,148,293,30,14
+    COMBOBOX        IDC_COMBO_WB,24,71,102,69,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "",IDC_SLIDER_BA,"msctls_trackbar32",TBS_AUTOTICKS | TBS_TOP | WS_TABSTOP,26,111,105,15
+    EDITTEXT        IDC_EDIT2,137,117,26,14,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_SLIDER_MG,"msctls_trackbar32",TBS_AUTOTICKS | TBS_TOP | WS_TABSTOP,26,128,105,15
+    EDITTEXT        IDC_EDIT3,137,134,26,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Contrast:",IDC_STATIC,18,185,28,8
+    CONTROL         "",IDC_SLIDER_CON,"msctls_trackbar32",TBS_AUTOTICKS | TBS_TOP | WS_TABSTOP,53,181,62,15
+    EDITTEXT        IDC_EDIT4,120,184,26,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Sharpness:",IDC_STATIC,18,202,32,8
+    CONTROL         "",IDC_SLIDER_SHR,"msctls_trackbar32",TBS_AUTOTICKS | TBS_TOP | WS_TABSTOP,53,198,62,15
+    EDITTEXT        IDC_EDIT5,120,202,26,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "ColorTone:",IDC_STATIC,18,220,30,8
+    CONTROL         "",IDC_SLIDER_TONE,"msctls_trackbar32",TBS_AUTOTICKS | TBS_TOP | WS_TABSTOP,53,216,62,15
+    EDITTEXT        IDC_EDIT6,120,220,26,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Saturation:",IDC_STATIC,18,237,30,8
+    CONTROL         "",IDC_SLIDER_SATU,"msctls_trackbar32",TBS_AUTOTICKS | TBS_TOP | WS_TABSTOP,53,233,62,15
+    EDITTEXT        IDC_EDIT7,120,236,26,14,ES_AUTOHSCROLL | ES_READONLY
+    COMBOBOX        IDC_COMBO_FE,60,253,87,62,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "FilterEffect:",IDC_STATIC,21,254,35,8
+    COMBOBOX        IDC_COMBO_TE,60,270,87,56,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "ToningEffect:",IDC_STATIC,18,271,39,8
+    COMBOBOX        IDC_COMBO_CS,30,309,102,64,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "UseCache",IDC_CHECK_CASHE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,327,46,10
+    EDITTEXT        IDC_EDIT_CT,25,87,26,14,ES_AUTOHSCROLL
+    LTEXT           "Kelvin",IDC_STATIC,55,90,19,8
+    PUSHBUTTON      "Click",IDC_BUTTON6,148,91,15,18,BS_ICON
+    LTEXT           "M",IDC_STATIC,21,127,8,8
+    LTEXT           "G",IDC_STATIC,126,127,8,8
+    LTEXT           "B",IDC_STATIC,19,108,8,8
+    LTEXT           "A",IDC_STATIC,125,105,8,8
+    COMBOBOX        IDC_COMBO_PS,28,169,102,70,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_DIALOG2 DIALOGEX 0, 0, 195, 210
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_CHILD | WS_CAPTION | WS_SYSMENU
+CAPTION "Save"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    LTEXT           "Type:",IDC_STATIC,27,11,20,8
+    LTEXT           "JPEG Quality:",IDC_STATIC,49,29,42,8
+    LTEXT           "ColorProfile:",IDC_STATIC,7,69,40,8
+    EDITTEXT        IDC_EDIT5,52,67,79,14,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "...",IDC_BUTTON2,137,67,23,14
+    PUSHBUTTON      "Save",IDC_BUTTON_SAVE,115,105,50,14
+    COMBOBOX        IDC_COMBO1,52,7,79,54,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO2,93,27,38,132,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_RAWDEVELOP_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 458
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 375
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\RAWDevelop.ico"
+IDI_ICON1               ICON                    "res\\icon1.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_CURSOR1             CURSOR                  "res\\cursor1.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "CompanyName", "TODO: <Company name>"
+            VALUE "FileDescription", "TODO: <File description>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "RAWDevelop.exe"
+            VALUE "LegalCopyright", "TODO: (c) <Company name>.  All rights reserved."
+            VALUE "OriginalFilename", "RAWDevelop.exe"
+            VALUE "ProductName", "TODO: <Product name>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About RAWDevelop..."
+END
+
+#endif    // âpåÍ (ïƒçë) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

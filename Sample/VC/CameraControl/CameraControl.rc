@@ -1,0 +1,226 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// ì˙ñ{åÍ resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+#ifdef _WIN32
+LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
+#pragma code_page(932)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)\r\n"
+    "LANGUAGE 17, 1\r\n"
+    "#pragma code_page(932)\r\n"
+    "#include ""afxres.rc#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // ì˙ñ{åÍ resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// âpåÍ (ïƒçë) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\CameraControl.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_CAMERACONTROL_DIALOG DIALOGEX 0, 0, 454, 240
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW | WS_EX_APPWINDOW
+CAPTION "CameraControl"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Take Picture",IDC_BUTTON1,133,7,50,20,BS_MULTILINE
+    EDITTEXT        IDC_EDIT1,7,219,176,14,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_PROGRESS1,"msctls_progress32",PBS_SMOOTH | WS_BORDER,133,105,50,14
+    COMBOBOX        IDC_COMBO1,61,25,65,193,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Tv:",IDC_STATIC,7,46,10,8
+    LTEXT           "AEMode:",IDC_STATIC,7,26,30,8
+    COMBOBOX        IDC_COMBO2,61,51,65,193,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO3,61,79,65,193,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO4,61,106,65,193,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Av:",IDC_STATIC,7,73,10,8
+    LTEXT           "ISO:",IDC_STATIC,7,109,14,8
+    COMBOBOX        IDC_COMBO6,61,159,122,193,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "MeteringMode:",IDC_STATIC,7,135,51,11
+    LTEXT           "ExposureComp:",IDC_STATIC,7,162,53,11
+    COMBOBOX        IDC_COMBO5,61,133,122,193,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Start EVF",IDC_BUTTON2,213,7,50,14
+    PUSHBUTTON      "End EVF",IDC_BUTTON3,277,7,50,14
+    PUSHBUTTON      "<<<",IDC_BUTTON4,240,79,19,14
+    PUSHBUTTON      "<<",IDC_BUTTON5,260,79,19,14
+    LTEXT           "Focus:",IDC_STATIC,216,82,22,8
+    PUSHBUTTON      "<",IDC_BUTTON6,280,79,19,14
+    PUSHBUTTON      ">",IDC_BUTTON7,300,79,19,14
+    PUSHBUTTON      ">>",IDC_BUTTON8,320,79,19,14
+    PUSHBUTTON      ">>>",IDC_BUTTON9,340,79,19,14
+    CONTROL         "",IDC_PICT,"Static",SS_BLACKFRAME,216,97,231,136
+    PUSHBUTTON      "Up",IDC_BUTTON10,390,18,31,14
+    LTEXT           "Focus Position:",IDC_STATIC,369,8,49,8
+    PUSHBUTTON      "Left",IDC_BUTTON11,371,33,31,14
+    PUSHBUTTON      "Right",IDC_BUTTON12,409,33,31,14
+    PUSHBUTTON      "Down",IDC_BUTTON13,390,48,31,14
+    LTEXT           "Zoom:",IDC_STATIC,216,63,21,8
+    PUSHBUTTON      "Fit",IDC_BUTTON14,240,61,31,14
+    PUSHBUTTON      "Zoom",IDC_BUTTON15,278,61,31,14
+    LTEXT           "ImageQuality:",IDC_STATIC,7,187,53,11
+    COMBOBOX        IDC_COMBO7,61,185,122,193,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Press halfway",IDC_BUTTON16,133,35,50,21,BS_MULTILINE
+    PUSHBUTTON      "Press completely",IDC_BUTTON17,133,59,50,20,BS_MULTILINE
+    PUSHBUTTON      "Press Off",IDC_BUTTON18,133,82,50,20,BS_MULTILINE
+    LTEXT           "EvfMode:",IDC_STATIC,216,27,32,8
+    COMBOBOX        IDC_COMBO8,249,26,112,193,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "EVF AF On",IDC_BUTTON21,213,43,50,14
+    PUSHBUTTON      "EVF AF Off",IDC_BUTTON22,277,43,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "CompanyName", "TODO: <Company name>"
+            VALUE "FileDescription", "TODO: <File description>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "CameraControl.exe"
+            VALUE "LegalCopyright", "TODO: (c) <Company name>.  All rights reserved."
+            VALUE "OriginalFilename", "CameraControl.exe"
+            VALUE "ProductName", "TODO: <Product name>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_CAMERACONTROL_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 447
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 233
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About CameraControl..."
+END
+
+#endif    // âpåÍ (ïƒçë) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+LANGUAGE 17, 1
+#pragma code_page(932)
+#include "afxres.rc"
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
